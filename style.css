@@ -1,0 +1,103 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1720793703449-4a5981c59ef6?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 8px;
+  background-color: #1e1e1eb8;
+}
+
+.chat-container {
+  width: 100%;
+  padding-bottom: 10px;
+  max-width: 1800px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #1e1e1eb8;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.message.received {
+  background-color: #323232;
+  align-self: flex-start;
+  font-size: large;
+}
+
+.message.sent {
+  background-color: #007bff;
+  align-self: flex-end;
+  font-size: large;
+}
+
+.input-area {
+  height: 100px;
+  display: flex;
+  border-top: 1px solid #444;
+  background-color: #1e1e1eb8;
+}
+
+.input-area textarea {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  resize: none;
+  background-color: #1e1e1eb8;
+  color: #ffffff;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.input-area button {
+  padding: 12px 24px;
+  width: 70px;
+  border: none;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/9131/9131510.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1e1e1eb8;
+  color: #ffffff;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.input-area button:hover {
+  background-color: #4f4f4f;
+}
